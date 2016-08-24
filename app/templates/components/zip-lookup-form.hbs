@@ -1,0 +1,11 @@
+<h2{{action 'showZipForm'}}>Legislator by Zip</h2>
+{{#if isZipFormShowing}}
+<form>
+  <div class="form-group">
+    <label for="zip">Zip</label>
+    {{input value=zip id="zip"}}
+  </div>
+  <button class="btn btn-primary"{{action 'zipLookup'}}>Submit</button>
+</form>
+  <h4 {{action 'hideZipForm' }}>Hide</h4>
+{{/if}}
